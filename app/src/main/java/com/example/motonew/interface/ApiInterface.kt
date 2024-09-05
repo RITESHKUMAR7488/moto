@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiInterface {
-    @GET("listings")
+    @GET("/api/listings")
     fun getListing(@Query("apikey") apiKey: String="ZrQEPSkKbml0ZXNobWFuMjlAZ21haWwuY29t"): Call<ApiListingResponseModel>
 
 }

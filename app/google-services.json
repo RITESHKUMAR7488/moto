@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "663770212840",
+    "project_id": "moto-15b60",
+    "storage_bucket": "moto-15b60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663770212840:android:918ba4bb500b06cc9e9c5d",
+        "android_client_info": {
+          "package_name": "com.example.motonew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663770212840-im4ru97bj6def7utbdqt1pvbqegv2v18.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.motonew",
+            "certificate_hash": "cb3d3db7db96f646195417a73ee35f30bc81988a"
+          }
+        },
+        {
+          "client_id": "663770212840-arp36lhq4bnmnp6e7ql5ul36ml3bdkeq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZunvsqHoSwToqnYm_czDsc0A3X5WiXJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663770212840-arp36lhq4bnmnp6e7ql5ul36ml3bdkeq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
