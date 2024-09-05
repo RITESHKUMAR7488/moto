@@ -5,16 +5,16 @@ import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MyApplication:Application() {
     private lateinit var retrofit: Retrofit
 
     override fun onCreate() {
         super.onCreate()
-        // Initialize Retrofit with the base URL, OkHttpClient, and Gson converter
         retrofit = Retrofit.Builder()
-            .baseUrl("https://auto.dev/") // Base URL for the API
-            .addConverterFactory(GsonConverterFactory.create()) // Add Gson converter
+            .baseUrl("https://auto.dev/")
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 }

@@ -7,9 +7,9 @@ import com.example.motonew.repository.MyRepository
 
 class MyViewModel(private val repository: MyRepository):ViewModel() {
 
-    fun getListing(apiKey:String): MutableLiveData<ApiListingResponseModel> {
+    fun getListing(): MutableLiveData<ApiListingResponseModel> {
         val data=MutableLiveData<ApiListingResponseModel>()
-        repository.getListing(apiKey,data)
+        repository.getListing(data)
         return data
     }
 

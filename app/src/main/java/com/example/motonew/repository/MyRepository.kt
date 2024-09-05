@@ -10,8 +10,8 @@ import retrofit2.Response
 
 class MyRepository(private val api:ApiInterface) {
 
-    fun getListing(apiKey:String,data:MutableLiveData<ApiListingResponseModel>){
-        api.getListing(apiKey).enqueue(object : Callback<ApiListingResponseModel>{
+    fun getListing(data:MutableLiveData<ApiListingResponseModel>){
+        api.getListing().enqueue(object : Callback<ApiListingResponseModel>{
             override fun onResponse(
                 p0: Call<ApiListingResponseModel>,
                 p1: Response<ApiListingResponseModel>
