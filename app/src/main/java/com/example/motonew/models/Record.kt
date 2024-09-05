@@ -1,5 +1,7 @@
 package com.example.motonew.models
 
+import java.io.Serializable
+
 data class Record(
     val acceptsLeads: Boolean,
     val active: Boolean,
@@ -70,4 +72,4 @@ data class Record(
     val vdpUrl: String,
     val vin: String,
     val year: Int
-)
+):Serializable

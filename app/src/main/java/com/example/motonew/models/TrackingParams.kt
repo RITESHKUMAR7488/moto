@@ -1,5 +1,7 @@
 package com.example.motonew.models
 
+import java.io.Serializable
+
 data class TrackingParams(
     val dealerGroupUniqueName: String,
     val dealerGroupUuid: String,
@@ -12,4 +14,4 @@ data class TrackingParams(
     val remoteSku: String,
     val rooftopUniqueName: Any,
     val rooftopUuid: Any
-)
+):Serializable

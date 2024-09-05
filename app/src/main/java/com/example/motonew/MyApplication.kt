@@ -8,7 +8,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class MyApplication:Application() {
-    private lateinit var retrofit: Retrofit
+    lateinit var retrofit: Retrofit
 
     override fun onCreate() {
         super.onCreate()

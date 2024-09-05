@@ -11,6 +11,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:elevation="0dp"
+
             android:layout_height="65dp">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -27,7 +28,7 @@
                     android:src="@drawable/baseline_menu_24"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tint="@color/white" />
+                    app:tint="@color/black" />
 
                 <TextView
                     android:id="@+id/search_view"
@@ -51,6 +52,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_bike"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:listitem="@layout/bike_child"

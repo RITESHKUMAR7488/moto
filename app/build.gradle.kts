@@ -47,7 +47,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation (libs.converter.gson)
     implementation (libs.retrofit)
-
+    implementation (libs.glide)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
