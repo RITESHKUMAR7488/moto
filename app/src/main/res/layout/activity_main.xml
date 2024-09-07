@@ -69,7 +69,7 @@
                 android:background="#0F1923"
                 android:fitsSystemWindows="true"
                 app:headerLayout="@layout/nav_header"
-                app:menu="@menu/nav_menu" />z
+                app:menu="@menu/nav_menu" />
 
 
         </LinearLayout>

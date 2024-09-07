@@ -30,7 +30,7 @@ class SignIn : AppCompatActivity() {
         auth=FirebaseAuth.getInstance()
 
         val gso=GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("301626032970-bnqot6s74pd0oo4gieiepg40ph8sjgr1.apps.googleusercontent.com")
+            .requestIdToken("663770212840-arp36lhq4bnmnp6e7ql5ul36ml3bdkeq.apps.googleusercontent.com")
             .requestEmail()
             .build()
 

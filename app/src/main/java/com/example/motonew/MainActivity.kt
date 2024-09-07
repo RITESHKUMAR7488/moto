@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             val drawerLayout: DrawerLayout =binding.drawerLayout
-            val navView: NavigationView = binding.navView
 
             binding.hamburgerIcon.setOnClickListener{
                 if (!drawerLayout.isDrawerOpen(GravityCompat.START)) {
