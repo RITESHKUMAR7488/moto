@@ -5,7 +5,7 @@
     >
     <item
         android:id="@+id/agent"
-        android:title="Agents"/>
+        android:title="Bike"/>
     <item
         android:id="@+id/scooter"
         android:title="Scooter"/>

@@ -74,7 +74,6 @@ class SignIn : AppCompatActivity() {
 
 
         }
-
     }
     private fun firebaseAuthWithGoogle(account: GoogleSignInAccount?){
         val credential = GoogleAuthProvider.getCredential(account?.idToken,null)
@@ -83,6 +82,11 @@ class SignIn : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Google sign-in successful, navigate to com.example.valowiki.MainActivity
                     Toast.makeText(this, "Google Sign-In Successful", Toast.LENGTH_SHORT).show()
+                    val sharedPref = getSharedPreferences("motonew", MODE_PRIVATE)
+                    val editor = sharedPref.edit()
+                    editor.putBoolean("loggedIn", true)
+                    editor.apply()
+
                     startActivity(Intent(this, MainActivity::class.java))
                     finish()  // Close the SignIn activity
                 } else {
