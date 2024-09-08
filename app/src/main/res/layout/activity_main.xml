@@ -5,6 +5,7 @@
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:id="@+id/drawer_layout"
+
         android:layout_height="match_parent">
         <LinearLayout
             android:id="@+id/main"
@@ -15,6 +16,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:elevation="0dp"
+                android:layout_marginTop="15dp"
                 android:layout_height="65dp">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -61,18 +63,18 @@
                 tools:listitem="@layout/bike_child"
 
                 />
-            <com.google.android.material.navigation.NavigationView
-                android:id="@+id/nav_View"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="start"
-                android:background="#0F1923"
-                android:fitsSystemWindows="true"
-                app:headerLayout="@layout/nav_header"
-                app:menu="@menu/nav_menu" />
+
 
 
         </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_View"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu" />
 
     </androidx.drawerlayout.widget.DrawerLayout>
 

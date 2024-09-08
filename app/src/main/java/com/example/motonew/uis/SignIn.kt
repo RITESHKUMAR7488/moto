@@ -55,6 +55,13 @@ class SignIn : AppCompatActivity() {
                             if (task.isSuccessful) {
                                 // Login successful, navigate to com.example.valowiki.MainActivity
                                 Toast.makeText(this@SignIn, "Login Successful", Toast.LENGTH_SHORT).show()
+                                val sharedPref = getSharedPreferences("motonew", MODE_PRIVATE)
+                                val editor = sharedPref.edit()
+                                editor.putBoolean("loggedIn", true)
+                                editor.apply()
+
+
+
                                 startActivity(Intent(this@SignIn, MainActivity::class.java))
                                 finish()  // Close the SignIn activity
                             } else {
@@ -64,6 +71,7 @@ class SignIn : AppCompatActivity() {
                         }
                 }
             }
+
 
         }
 
